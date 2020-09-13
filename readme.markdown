@@ -1,5 +1,6 @@
 
 ## ResponseCache使用
+
  [![NuGet](https://img.shields.io/nuget/v/NetPro.ResponseCache.svg)](https://nuget.org/packages/NetPro.ResponseCache)
 
 支持对响应缓存，同样的查询条件在缓存时间内直接返回之前的响应接口，降低响应时间
