@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace NetPro.ResponseCache
 {
@@ -20,12 +19,17 @@ namespace NetPro.ResponseCache
         /// 
         /// </summary>
         public List<string> IgnoreVaryQuery { get; set; }
+
+        /// <summary>
+        /// 是否集群
+        /// </summary>
+        public bool Cluster { get; set; }
     }
 
     /// <summary>
     /// 忽略缓存
     /// </summary>
-    [AttributeUsage(AttributeTargets.Method,Inherited = false)]
+    [AttributeUsage(AttributeTargets.Method | AttributeTargets.Class, Inherited = false)]
     public class IgnorePostResponseCacheAttribute : Attribute
     {
 
